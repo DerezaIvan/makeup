@@ -138,7 +138,7 @@
   max-width: 630px;
   margin: 0;
   text-align: center;
-  text-shadow: 1px 1px darkblue;
+  text-shadow: 0px 1px #1a1a1a;
 }
 
 @media screen and (max-width: 425px) {
@@ -645,6 +645,7 @@
 
 @media screen and (max-width: 425px) {
   .footer__text {
-    font-size: 20px;
+    font-size: 14px;
+    align-self: flex-end;
   }
 }
