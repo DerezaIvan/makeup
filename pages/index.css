@@ -657,7 +657,7 @@
   margin-top: 25px;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
   .portfolio__card {
     gap: 10px;
   }
