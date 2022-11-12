@@ -35,7 +35,7 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 515px) {
   .header__logo {
     width: 120px;
   }
@@ -99,7 +99,7 @@
   }
 }
 
-@media screen and (max-width: 424px) {
+@media screen and (max-width: 500px) {
   .menu__text {
     margin: 0;
     font-size: 12px;
@@ -274,7 +274,7 @@
   }
 }
 
-@media screen and (max-width: 424px) {
+@media screen and (max-width: 450px) {
   .profile__title {
     font-size: 24px;
   }
@@ -299,13 +299,13 @@
   }
 }
 
-@media screen and (max-width: 424px) {
+@media screen and (max-width: 478px) {
   .profile__illustration {
     max-width: 165px;
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 450px) {
   .profile__illustration {
     max-width: 125px;
   }
@@ -330,13 +330,13 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 478px) {
   .profile__text-main {
     font-size: 29px;
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 450px) {
   .profile__text-main {
     font-size: 25px;
   }
@@ -769,7 +769,7 @@
 
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
   .sertificate {
     flex-direction: column;
     align-items: center;
@@ -881,7 +881,7 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
   .sertificate__btn {
     position: absolute;
     left: 37%;
@@ -920,12 +920,14 @@
     grid-template-rows: 47px 161px 30px;
   }
 }
-@media screen and (max-width: 424px) {
+
+@media screen and (max-width: 500px) {
   .feedback {
-    grid-template-columns: 160px 150px 30px;
+    grid-template-columns: 155px 150px 30px;
   }
 }
-@media screen and (max-width: 320px) {
+
+@media screen and (max-width: 360px) {
   .feedback {
     grid-template-columns: 140px 150px 30px;
   }
@@ -1017,7 +1019,8 @@
   grid-area: 3;
 
 }
-.feedback__btn:hover{
+
+.feedback__btn:hover {
   opacity: .6;
 }
 
@@ -1043,7 +1046,12 @@
     font-size: 12px;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 445px) {
+  .feedback__btn {
+    left: 21%;
+  }
+}
+@media screen and (max-width: 400px) {
   .feedback__btn {
     left: 18%;
   }
@@ -1067,6 +1075,7 @@
     max-width: 320px;
   }
 }
+
 @media screen and (max-width: 767px) {
   .feedback__avatar {
     left: 44%;
@@ -1097,6 +1106,7 @@
     top: 55%;
   }
 }
+
 @media screen and (max-width: 767px) {
   .feedback__illustration {
     max-width: 110px;
@@ -1104,6 +1114,7 @@
     top: 65%;
   }
 }
+
 @media screen and (max-width: 375px) {
   .feedback__illustration {
     left: 66%;
