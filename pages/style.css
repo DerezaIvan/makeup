@@ -2,6 +2,11 @@
 @import url(../vendor/fonts/cormorantgaramond/cormorantgaramond.css);
 @import url(../vendor/normalize.css);
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .page {
   background-color: #fffaf3;
   max-width: 1440px;
@@ -24,7 +29,25 @@
   justify-content: space-between;
 }
 
-.header__logo {
+.header__main img {
+  border-radius: 200px;
+  width: 250px;
+
+}
+
+@media screen and (max-width: 768px) {
+  .header__main img {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .header__main img {
+    width: 120px;
+  }
+}
+
+/* .header__logo {
   border-radius: 200px;
   width: 250px;
 }
@@ -39,7 +62,7 @@
   .header__logo {
     width: 120px;
   }
-}
+} */
 
 .header__main {
   display: flex;
@@ -363,7 +386,7 @@
   }
 }
 
-.card {
+.card-profile {
   text-align: center;
 }
 
@@ -657,7 +680,7 @@
   margin-top: 25px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500gipx) {
   .portfolio__card {
     gap: 10px;
   }
@@ -1046,11 +1069,13 @@
     font-size: 12px;
   }
 }
+
 @media screen and (max-width: 445px) {
   .feedback__btn {
     left: 21%;
   }
 }
+
 @media screen and (max-width: 400px) {
   .feedback__btn {
     left: 18%;
@@ -1279,4 +1304,101 @@
     font-size: 14px;
     align-self: flex-end;
   }
+}
+
+.card {
+  padding: 0;
+  display: grid;
+  max-width: 1184px;
+  margin: 50px auto 0;
+  grid-template-columns: repeat(auto-fill, minmax(284px, 1fr));
+  gap: 10px;
+  justify-content: center;
+}
+
+.card__container {
+  margin-top: 15px;
+}
+
+.card li {
+  list-style: none;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5%;
+}
+
+@media screen and (max-width: 525px) {
+  .card img {
+    max-width: 320px;
+  }
+}
+
+.card p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 150%;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .card p {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card p {
+    font-size: 18px;
+  }
+}
+
+.card__container {
+  padding: 0;
+  display: grid;
+  max-width: 1184px;
+  margin: 50px auto 0;
+  grid-template-columns: repeat(auto-fill, minmax(284px, 1fr));
+  gap: 10px;
+  justify-content: center;
+}
+
+.card__container img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5%;
+}
+
+@media screen and (max-width: 525px) {
+  .card__container img {
+    max-width: 250px;
+  }
+}
+
+.card__container li {
+  list-style: none;
+  margin: 0 auto;
+}
+
+.card__container p {
+  margin: 0 0 10px;
+    font-size: 24px;
+    text-align: center;
+    color: #5a5a69;
+    font-style: normal;
+    font-weight: 700;
+    font-family: 'Cormorant Garamond';
+    width: 250px;
 }
