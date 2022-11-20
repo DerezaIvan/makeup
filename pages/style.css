@@ -680,13 +680,13 @@
   font-weight: 400;
   font-size: 36px;
   text-align: center;
-  margin: 50px 0 0;
+  margin: 50px 0 20px;
   color: #84888a;
 }
 @media screen and (max-width: 425px) {
   .container-title {
     font-size: 18px;
-    margin-top: 25px;
+    margin: 25px 0 10px;
   }
 }
 
