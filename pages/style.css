@@ -32,7 +32,6 @@
 .header__main img {
   border-radius: 200px;
   width: 250px;
-
 }
 
 @media screen and (max-width: 768px) {
@@ -111,7 +110,7 @@
 .menu__text {
   margin: 0;
   font-size: 30px;
-  font-family: 'Cormorant Garamond';
+  font-family: "Cormorant Garamond";
   font-style: italic;
 }
 
@@ -139,7 +138,7 @@
 .menu__link:hover {
   background: rgba(0, 0, 0, 0);
   color: #84888a;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .menu__link-icon {
@@ -151,7 +150,7 @@
 }
 
 .menu__link_icon:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 @media screen and (max-width: 425px) {
@@ -160,7 +159,6 @@
     height: 20px;
   }
 }
-
 
 .content {
   max-width: 1440px;
@@ -226,7 +224,7 @@
 }
 
 .profile__btn:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .profile__btn-price {
@@ -241,7 +239,7 @@
 }
 
 .profile__btn-price:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .profile__text {
@@ -671,115 +669,45 @@
     margin-top: 25px;
   }
 }
-
-.portfolio__card {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 25px;
-}
-
-@media screen and (max-width: 500gipx) {
-  .portfolio__card {
-    gap: 10px;
-  }
-}
-
-.portfolio__illustration {
-  max-width: 270px;
-  max-height: 300px;
-  object-fit: cover;
-}
-
-@media screen and (max-width: 1024px) {
-  .portfolio__illustration {
-    max-width: 220px;
-    max-height: 250px;
-  }
-}
-
-@media screen and (max-width: 875px) {
-  .portfolio__illustration {
-    max-width: 180px;
-    max-height: 200px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .portfolio__illustration {
-    max-width: 150px;
-    max-height: 180px;
-  }
-}
-
-.portfolio__card-container {
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
-.portfolio__text-card {
+.container-title {
   font-family: "Cormorant Garamond";
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
-  line-height: 28px;
+  font-size: 36px;
   text-align: center;
-  color: #000000;
-  margin: 0;
-  max-width: 270px;
+  margin: 50px 0 0;
+  color: #84888a;
 }
-
-@media screen and (max-width: 1024px) {
-  .portfolio__text-card {
-    max-width: 220px;
+@media screen and (max-width: 425px) {
+  .container-title {
+    font-size: 18px;
+    margin-top: 25px;
   }
 }
 
-@media screen and (max-width: 875px) {
-  .portfolio__text-card {
-    max-width: 220px;
-    font-size: 22px;
-    line-height: 18px;
+.container-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-content: center;
+  gap: 10px;
+}
+@media screen and (max-width: 425px) {
+  .container-main {
+    margin: 0 auto;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .portfolio__text-card {
-    max-width: 150px;
-    font-size: 20px;
-    line-height: 18px;
-  }
+.container-main > div > img {
+  max-width: 300px;
+  width: 100%;
+  height: 320px;
+  border-radius: 20%;
 }
-
-.portfolio__illustration-container {
-  max-width: 270px;
-  max-height: 300px;
-  border-radius: 40%;
-}
-
-@media screen and (max-width: 1024px) {
-  .portfolio__illustration-container {
-    max-width: 220px;
-    max-height: 250px;
-  }
-}
-
-@media screen and (max-width: 875px) {
-  .portfolio__illustration-container {
-    max-width: 180px;
-    max-height: 200px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .portfolio__illustration-container {
-    max-width: 150px;
-    max-height: 180px;
-  }
-}
-
 
 .sertificate {
   max-width: 1440px;
@@ -789,7 +717,6 @@
   background-image: url(../images/Ellipse.png);
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 @media screen and (max-width: 500px) {
@@ -827,7 +754,7 @@
 }
 
 .sertificate__title {
-  font-family: 'Cormorant Garamond';
+  font-family: "Cormorant Garamond";
   font-style: normal;
   font-weight: 400;
   font-size: 72px;
@@ -853,9 +780,8 @@
   }
 }
 
-
 .sertificate__subtitle {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -884,7 +810,6 @@
   }
 }
 
-
 .sertificate__btn {
   text-decoration: none;
   color: black;
@@ -895,7 +820,7 @@
 }
 
 .sertificate__btn:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 @media screen and (max-width: 768px) {
@@ -957,7 +882,7 @@
 }
 
 .feedback__title {
-  font-family: 'Cormorant Garamond';
+  font-family: "Cormorant Garamond";
   font-style: normal;
   font-weight: 300;
   font-size: 72px;
@@ -994,7 +919,7 @@
 }
 
 .feedback__subtitle {
-  font-family: 'Cormorant Garamond';
+  font-family: "Cormorant Garamond";
   font-style: normal;
   font-weight: 300;
   font-size: 72px;
@@ -1030,7 +955,7 @@
 }
 
 .feedback__btn {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -1040,11 +965,10 @@
   left: 30%;
   color: #000000;
   grid-area: 3;
-
 }
 
 .feedback__btn:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 @media screen and (max-width: 1280px) {
@@ -1157,7 +1081,6 @@
     padding-top: 20px;
   }
 }
-
 
 .studio__title {
   font-family: "Cormorant Garamond";
@@ -1304,101 +1227,4 @@
     font-size: 14px;
     align-self: flex-end;
   }
-}
-
-.card {
-  padding: 0;
-  display: grid;
-  max-width: 1184px;
-  margin: 50px auto 0;
-  grid-template-columns: repeat(auto-fill, minmax(284px, 1fr));
-  gap: 10px;
-  justify-content: center;
-}
-
-.card__container {
-  margin-top: 15px;
-}
-
-.card li {
-  list-style: none;
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-  max-height: 300px;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
-  border-radius: 5%;
-}
-
-@media screen and (max-width: 525px) {
-  .card img {
-    max-width: 320px;
-  }
-}
-
-.card p {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 38px;
-  line-height: 150%;
-  margin: 0;
-}
-
-@media screen and (max-width: 768px) {
-  .card p {
-    font-size: 30px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .card p {
-    font-size: 18px;
-  }
-}
-
-.card__container {
-  padding: 0;
-  display: grid;
-  max-width: 1184px;
-  margin: 50px auto 0;
-  grid-template-columns: repeat(auto-fill, minmax(284px, 1fr));
-  gap: 10px;
-  justify-content: center;
-}
-
-.card__container img {
-  width: 100%;
-  height: auto;
-  max-height: 300px;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
-  border-radius: 5%;
-}
-
-@media screen and (max-width: 525px) {
-  .card__container img {
-    max-width: 250px;
-  }
-}
-
-.card__container li {
-  list-style: none;
-  margin: 0 auto;
-}
-
-.card__container p {
-  margin: 0 0 10px;
-    font-size: 24px;
-    text-align: center;
-    color: #5a5a69;
-    font-style: normal;
-    font-weight: 700;
-    font-family: 'Cormorant Garamond';
-    width: 250px;
 }
