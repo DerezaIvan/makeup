@@ -8,7 +8,12 @@
 }
 
 .page {
-  background-color: #fffaf3;
+  background: rgb(221, 245, 209);
+  background: radial-gradient(
+    circle,
+    rgba(221, 245, 209, 1) 45%,
+    rgba(233, 221, 228, 1) 93%
+  );
   max-width: 1440px;
   min-width: 320px;
   padding: 0 30px;
@@ -168,9 +173,6 @@
 .profile {
   max-width: 1440px;
   margin: 50px auto 0;
-  background-image: url(../images/Ellipse.png);
-  background-repeat: no-repeat;
-  position: relative;
 }
 
 .profile__content {
@@ -484,7 +486,7 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 767px) {
   .promotions__text {
     padding: 42px 30px 24px 0;
   }
@@ -498,9 +500,13 @@
   line-height: 58px;
   max-width: 400px;
   margin: 0;
-  background: rgba(255, 255, 255, 0.01);
-  backdrop-filter: blur(5px);
   padding: 30px 0 10px 50px;
+  background: rgb(234, 237, 232);
+  background: radial-gradient(
+    circle,
+    rgba(234, 237, 232, 0.45704219187675066) 45%,
+    rgba(233, 235, 236, 1) 93%
+  );
 }
 
 @media screen and (max-width: 768px) {
@@ -510,10 +516,15 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 767px) {
   .promotions__title {
     font-size: 18px;
     line-height: 14px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .promotions__title {
+    font-size: 14px;
   }
 }
 
@@ -525,8 +536,12 @@
   line-height: 150%;
   max-width: 400px;
   margin: 0;
-  background: rgba(255, 255, 255, 0.01);
-  backdrop-filter: blur(7px);
+  background: rgb(234, 237, 232);
+  background: radial-gradient(
+    circle,
+    rgba(234, 237, 232, 0.45704219187675066) 45%,
+    rgba(233, 235, 236, 1) 93%
+  );
 }
 
 @media screen and (max-width: 768px) {
@@ -537,19 +552,23 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 767px) {
   .promotions__paragraph {
     font-size: 12px;
     line-height: 150%;
     max-width: 167px;
   }
 }
+@media screen and (max-width: 500px) {
+  .promotions__paragraph {
+    font-size: 10px;
+    line-height: 120%;
+  }
+}
 
 .services {
   position: relative;
   max-width: 1440px;
-  background-image: url(../images/Ellipse.png);
-  background-size: cover;
 }
 
 .services__title {
@@ -641,8 +660,6 @@
 
 .portfolio {
   max-width: 1440px;
-  background-image: url(../images/Ellipse.png);
-  background-size: cover;
 }
 
 .portfolio__title {
@@ -723,9 +740,6 @@
   display: flex;
   justify-content: space-evenly;
   margin: 100px 0 0;
-  background-image: url(../images/Ellipse.png);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 @media screen and (max-width: 500px) {
@@ -847,9 +861,6 @@
 
 .feedback {
   max-width: 1440px;
-  background-image: url(../images/Ellipse.png);
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
   display: grid;
   grid-template-columns: 450px 300px 300px;
@@ -1079,9 +1090,6 @@
   }
 }
 .feedback-photo {
-  background-image: url(../images/Ellipse.png);
-  background-repeat: no-repeat;
-  background-size: cover;
   padding-top: 100px;
 }
 @media screen and (max-width: 768px) {
@@ -1108,8 +1116,6 @@
 
 .studio {
   max-width: 1440px;
-  background-image: url(../images/Ellipse.png);
-  background-size: cover;
 }
 
 @media screen and (max-width: 768px) {
