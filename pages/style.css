@@ -986,6 +986,7 @@
   left: 30%;
   color: #000000;
   grid-area: 3;
+  z-index: 3;
 }
 
 .feedback__btn:hover {
