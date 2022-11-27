@@ -1092,6 +1092,13 @@
 }
 .feedback-photo {
   padding-top: 100px;
+  text-align: center;
+}
+.feedback-photo .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (max-width: 768px) {
   .feedback-photo {
@@ -1113,6 +1120,12 @@
     margin-top: 20px;
     text-align: center;
   }
+}
+.feedback-photo .container > div > img {
+  max-width: 270px;
+  padding-top: 20px;
+  border-radius: 10%;
+  position: relative;
 }
 
 .studio {
