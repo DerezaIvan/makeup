@@ -21,4 +21,4 @@
 
 **Ссылка на проект GitHub**
 
-* [MakeUpy](https://derezaivan.github.io/MakeUp/)
+* [MakeUp](https://derezaivan.github.io/makeup/)
